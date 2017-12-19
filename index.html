@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <!-- Test Dependencies -->
+  <!-- <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+  <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script> -->
+  <script>
+    mocha.ui('bdd');
+    mocha.reporter('html');
+    var expect = chai.expect;
+  </script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="spec/test.js"></script>
+  <!-- <script>
+    window.addEventListener('load', function() {
+      mocha.run();
+    });
+  </script> -->
+</head>
+<body>
+
+  <table border="solid 1px">
+    <tr id = "row1">
+      <td colspan="4" id="display">0</td>
+    </tr>
+    <tr id = "row2">
+      <td class="operator" id="clear">C</td>
+      <td class="operator" id="sign">+/-</td>
+      <td class="operator" id="modulus">%</td>
+      <td class="operator" id="divide">/</td>
+    </tr>
+    <tr id="row3">
+      <td class="number" id="7">7</td>
+      <td class="number" id="8">8</td>
+      <td class="number" id="9">9</td>
+      <td class="operator" id="multiply">*</td>
+    </tr>
+    <tr id="row4">
+      <td class="number" id="4">4</td>
+      <td class="number" id="5">5</td>
+      <td class="number" id="6">6</td>
+      <td class="operator" id="subtract">-</td>
+    </tr>
+    <tr id="row5">
+      <td class="number" id="1">1</td>
+      <td class="number" id="2">2</td>
+      <td class="number" id="3">3</td>
+      <td class="operator" id="add">+</td>
+    </tr>
+    <tr id="row6">
+      <td class="number" colspan="2" id="0">0</td>
+      <td class="operator" id="decimal">.</td>
+      <td class="operator" id="equals">=</td>
+    </tr>
+  </table>
+
+  <!-- <div id="mocha"></div> -->
+
+  <!-- Your Calculator JS -->
+  <script src="public/calc.js"></script>
+</body>
+</html>
